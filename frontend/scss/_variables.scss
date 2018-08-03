@@ -1,0 +1,20 @@
+// Fonts
+// @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic&subset=latin,cyrillic);
+// @import url(https://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
+
+// $font-primary: 'Noto Serif', serif;
+// $font-secondary: 'Bad Script', sans-serif;
+$font-primary: 'Verdana', serif;
+$font-secondary: 'Times New Roman', sans-serif;
+
+// Палитра
+$palette1: #fff;
+$palette2: #000;
+$palette3: #000;
+$palette4: #000;
+
+// Основное оформление
+$color-primary: $palette4;		// Основной текст
+$color-secondary: $palette3;	// Вспомогательный текст (например, заголовки)
+$color-bg: $palette1;			// Цвет фона
+// $color-link: $palette2;			// Цвет ссылок

@@ -1,0 +1,58 @@
+.door {
+  position: absolute;
+  top: 14.9em;
+  right: 1em;
+  width: 11em;
+  height: 18.7em;
+  background-color: #ccc;
+  border: 0.1em solid #000;
+
+  .door-descr {
+    padding: 44% 1em;
+    box-sizing: padding-box;
+    text-align: center;
+    line-height: 1.7;
+    color: #999;
+    font-style: italic;
+  }
+
+  .hinge {
+    position: absolute;
+    width: 0.6em;
+    height: 2em;
+    background-color: #fff;
+    border: 0.1em solid #000;
+
+    &.hinge-top {top: 15%;}
+    &.hinge-bottom {top: 70%;}
+    &.hinge-left {left: -0.3em;}
+    &.hinge-right {right: -0.3em;}
+  }
+
+  .door-width {
+    position: absolute;
+    top: -1.6em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .door-height {
+    position: absolute;
+    top: 45%;
+    left: -1.6em;
+    text-align: center;
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
+
+  .stvorka {
+    height: 100%;
+    position: absolute;
+    left: 33%;
+    border-right: 2pt solid black;
+
+    &.stvorka-left {
+      left: 66%;
+    }
+  }
+}

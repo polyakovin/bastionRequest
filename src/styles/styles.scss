@@ -2,6 +2,7 @@
 @import "mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+
 body {
   font-family: $font-primary;
   background: $color-bg;
@@ -9,15 +10,44 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-secondary;
-  color: $color-secondary;
+  // font-family: $font-secondary;
+  // color: $color-secondary;
 }
 
-// For responsive features
+#ui-datepicker-div {
+  z-index: 1200;
+}
+
+// Настройка версии для печати
+@media print {
+  * {-webkit-print-color-adjust: exact;}
+
+  .A4 {
+    page-break-before: always;
+    min-height: 297mm;
+    min-width: 210mm;
+    max-height: 297mm;
+    max-width: 210mm;
+
+    .page {
+      min-height: 287mm;
+      max-height: 287mm;
+      font-size: 14.4pt;
+    }
+
+    .page-2 {
+      font-size: 8.8pt;
+    }
+  }
+
+  .door {
+    background-color: #ccc;
+  }
+}
+
+// Запросы для адаптивной вёрстки
 @media (max-width: 575px) {} // xxs
 @media (min-width: 576px) and (max-width: 767px) {} // xs
 @media (min-width: 768px) and (max-width: 991px) {} // sm
 @media (min-width: 992px) and (max-width: 1199px) {} // md
 @media (min-width: 1200px) {} // lg
-
-

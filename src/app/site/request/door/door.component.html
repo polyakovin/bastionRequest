@@ -1,0 +1,21 @@
+<div class="door">
+  <div class="hinge hinge-top hinge-left"
+    *ngIf="door.openSide === 0 || door.type === 2"></div>
+  <div class="hinge hinge-bottom hinge-left"
+    *ngIf="door.openSide === 0 || door.type === 2"></div>
+  <div class="hinge hinge-top hinge-right"
+    *ngIf="door.openSide === 1 || door.type === 2"></div>
+  <div class="hinge hinge-bottom hinge-right"
+    *ngIf="door.openSide === 1 || door.type === 2"></div>
+  <div class="door-width">{{ door.width }}</div>
+  <div class="door-height">{{ door.height }}</div>
+  <div class="stvorka"
+    *ngIf="door.type === 2"
+    [class.stvorka-left]="door.openSide === 1"></div>
+  <div class="door-descr">
+    Вид<br>
+    конструкции<br>
+    со стороны<br>
+    {{ door.openingType === 0 ? "квартиры" : "лестничной\nплощадки" }}
+  </div>
+</div>

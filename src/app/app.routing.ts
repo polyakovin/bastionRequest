@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
-import { MainComponent } from "./main/main.component";
+import { SiteComponent } from "./site/site.component";
 
 const APP_ROUTES: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', component: SiteComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 

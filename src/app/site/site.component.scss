@@ -1,0 +1,28 @@
+.A4 {
+  padding: 10pt;
+  margin-bottom: 150pt;
+  position: relative;
+
+  @media (max-width: 575px) {
+    width: 100%;
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    width: 510px;
+    height: 719px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 690px;
+    height: 973px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    width: 930px;
+    height: 1311px;
+  }
+  @media (min-width: 1200px) {
+    width: 1110px;
+    height: 1565px;
+  }
+
+  // background-color: #cfc;
+  // border: 1pt solid black;
+}

@@ -1,0 +1,85 @@
+.form-group {
+  margin: 10px 0 0 0;
+  font-size: 0.875rem;
+  width: 100%;
+  cursor: pointer;
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .input-group {
+    .input-group-addon {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  .form-check {
+    margin-bottom: 0;
+  }
+
+  // Номер договора
+  &.number {
+    position: relative;
+
+    select.form-control {
+      width: 36px;
+      display: inline-block;
+      font-weight: normal;
+      padding: 0; // для Windows
+    }
+
+    input {
+      position: absolute;
+      left: 55px;
+      right: 0;
+      display: inline-block;
+      width: calc(100% - 55px);
+    }
+  }
+
+  .date {
+    position: relative;
+
+    fa-icon {
+      position: absolute;
+      z-index: 1199;
+      right: 6px;
+      top: 6px;
+    }
+  }
+
+  // Размеры двери
+  .size {
+    width: 100%;
+    position: relative;
+    height: 34px;
+
+    .size-l, .size-r {
+      width: 45%;
+      display: inline-block;
+      position: absolute;
+
+      input {
+        text-align: center;
+      }
+    }
+
+    .size-r {
+      right: 0;
+    }
+
+    .cross {
+      display: block;
+      position: absolute;
+      top: 4px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+hr {
+  margin-top: 2rem;
+}

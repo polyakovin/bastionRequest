@@ -8,8 +8,19 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
-import { MainComponent } from './main/main.component';
 import { AppComponent } from './app.component';
+import { SiteComponent } from './site/site.component';
+import { ModalComponent } from './site/modal/modal.component';
+import { HeaderComponent } from './site/header/header.component';
+import { FormComponent } from './site/modal/form/form.component';
+import { RequestComponent } from './site/request/request.component';
+import { ContractComponent } from './site/contract/contract.component';
+import { DoorComponent } from './site/request/door/door.component';
+
+import { DelimitNumberPipe } from './site/delimit-number.pipe';
+import { PhoneNumberPipe } from './site/phone-number.pipe';
+import { LiteralNumberPipe } from './site/literal-number.pipe';
+
 import { HttpService } from './http.service';
 
 mergeAllIconsToOneObject();
@@ -17,7 +28,16 @@ mergeAllIconsToOneObject();
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    SiteComponent,
+    ModalComponent,
+    HeaderComponent,
+    FormComponent,
+    RequestComponent,
+    ContractComponent,
+    DoorComponent,
+    DelimitNumberPipe,
+    PhoneNumberPipe,
+    LiteralNumberPipe
   ],
   imports: [
     BrowserModule,
